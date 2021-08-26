@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!----------------------------------- Home page ---------------------------------->
     <section class="header">
         <nav>
             <a href="index.html"><img src="img/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fal fa-window-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -22,14 +25,73 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="far fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
-            <p>Making Website is now one of the easiest thing in the world. you just need to learn HTML, CSS,<br> Javascript and you are good to good to go.
+            <p>Making Website's now one of the easiest thing in the world. you just need to learn HTML, CSS,<br> Javascript and you are good to good to go.
             </p>
-            <a href="">Visit Us to Know more</a>
+            <a href="">Visit Us To Know More</a>
         </div>
     </section>
+    <!------------------------------------------------- Course Design --------------------------------------->
+    <section class="course">
+        <h1>Courses We offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, praesentium optio doloremque iure fugit porro labore doloribus soluta laboriosam facere, maiores provident iusto odit ?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, praesentium optio doloremque iure fugit porro labore doloribus soluta laboriosam facere, maiores provident iusto odit ?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, praesentium optio doloremque iure fugit porro labore doloribus soluta laboriosam facere, maiores provident iusto odit ?</p>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------- campuse page---------------------- -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEW WORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
